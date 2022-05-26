@@ -1,1 +1,1 @@
-module.exports = require('./src/functions/hello.js')
+module.exports = require('./src/src/api/hello.js')

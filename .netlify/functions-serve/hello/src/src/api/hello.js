@@ -21,7 +21,7 @@ var __toCommonJS = /* @__PURE__ */ ((cache) => {
   };
 })(typeof WeakMap !== "undefined" ? /* @__PURE__ */ new WeakMap() : 0);
 
-// functions/hello.ts
+// src/api/hello.ts
 var hello_exports = {};
 __export(hello_exports, {
   handler: () => handler
