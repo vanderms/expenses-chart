@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../home/vanderms/dev/frontendmentor/expenses-chart/src/api/expenses.ts"],
+  "sourceRoot": "/tmp/tmp-39002-OI7pUvH8115U",
+  "sourcesContent": ["import { Handler } from '@netlify/functions';\nimport * as data from './data.json';\n\nconst handler: Handler = async (event, context) => {\n  return {\n    statusCode: 200,\n    body: JSON.stringify(data)\n  }\n}\n\nexport { handler };"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAGA,IAAM,UAAmB,OAAO,OAAO,YAAY;AACjD,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU,YAAI;AAAA,EAC3B;AACF;",
+  "names": []
+}
