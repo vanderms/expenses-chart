@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../home/vanderms/dev/frontendmentor/expenses-chart/functions/hello.ts"],
+  "sourceRoot": "/tmp/tmp-36516-hPGI0R6Q12JI",
+  "sourcesContent": ["import { Handler } from '@netlify/functions';\n\nconst handler: Handler = async (event, context) => {\n  return {\n    statusCode: 200,\n    body: JSON.stringify({message: 'servless functions work!'})\n  }\n}\n\nexport { handler };"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAEA,IAAM,UAAmB,OAAO,OAAO,YAAY;AACjD,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU,EAAC,SAAS,2BAA0B,CAAC;AAAA,EAC5D;AACF;",
+  "names": []
+}
