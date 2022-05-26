@@ -1,3 +1,5 @@
+@use '../../styles/partials/mixins' as *;
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -7,10 +9,19 @@
   background-color: var(--soft-red);
   color: var(--white);
 
+  @include media(laptop) {
+    padding: 27px 39px 25px 32px;
+  }
+
   .title {
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
+
+    @include media(laptop) {
+      font-size: 18px;
+      line-height: 23px;
+    }
   }
 
   .value {
@@ -18,12 +29,22 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
+    color: var(--very-pale-orange);
+
+    @include media(laptop) {
+      margin-top: 8px;
+      font-size: 32px;
+      line-height: 42px;
+    }
   }
 
   .logo {
     width: 60px;
     height: 40px;
+
+    @include media(laptop) {
+      width: 72px;
+      height: 48px;
+    }
   }
-
-
 }

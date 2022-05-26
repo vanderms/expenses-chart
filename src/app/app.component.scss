@@ -1,5 +1,15 @@
+@use '../styles/partials/mixins' as *;
 
 .container {
-  margin: 67px auto 0;
-  width: min(343px, 92%);  
+  margin-inline: auto;
+  width: min(343px, 92%);
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include media(laptop) {
+    width: 540px;
+  }
 }
