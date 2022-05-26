@@ -1,0 +1,34 @@
+.chart {
+  margin-top: 52px;
+  display: flex;
+  justify-content: space-between;
+  height: 177px;
+
+  .column {
+    width: 33px;
+    height: 177px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    &.higher .amount{
+      background-color: var(--cyan);
+    }    
+  }
+
+  .amount {
+    background-color: var(--soft-red);
+    width: 33px;
+    border-radius: 3px;
+  }
+
+  .day {
+    margin-top: 11px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--medium-brown);
+  }
+}
