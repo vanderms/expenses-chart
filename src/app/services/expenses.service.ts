@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
+import { Observable, share } from 'rxjs';
 import { ExpenseModel } from 'src/app/models/expense.model';
 
 @Injectable({
@@ -9,11 +8,19 @@ import { ExpenseModel } from 'src/app/models/expense.model';
 })
 export class ExpensesService {
 
+  private expenses: Observable<ExpenseModel> | null = null;
+
   private url: string = '/.netlify/functions/expenses';
     
   constructor(private http: HttpClient) {}
     
   getExpenses(): Observable<ExpenseModel> {
-    return this.http.get<ExpenseModel>(this.url);      
+    if (this.expenses) {
+      return this.expenses;      
+    }    
+    else {
+      this.expenses = this.http.get<ExpenseModel>(this.url).pipe(share());
+      return this.expenses;
+    }
   }
 }
