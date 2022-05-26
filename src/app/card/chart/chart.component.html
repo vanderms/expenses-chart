@@ -1,8 +1,9 @@
 <ol class="chart">
   <li *ngFor="let expenses of dailyExpenses">
-      <div class="column" [class.higher]="expenses.day === higherColumn.day">
-        <span class="amount" [ngStyle]="{ 'height.px': calcHeight(expenses.amount) }"></span>
+      <div class="daily-expenses" [class.higher]="expenses.day === higherColumn.day">        
         <span class="day">{{ expenses.day }}</span>
+        <span class="column" [ngStyle]="{ 'height.px': calcHeight(expenses.amount) }"></span>
+        <span class="amount">${{expenses.amount}}</span>
       </div>
   </li>
 </ol>
