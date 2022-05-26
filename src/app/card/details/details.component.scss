@@ -1,0 +1,37 @@
+.card-details {
+  margin-top: 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  .title {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--medium-brown);
+  }
+
+  .month-value {
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    color: var(--dark-brown);
+  }
+
+  .last-month-percentage {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+    color: var(--dark-brown);
+  }
+
+  .last-month-label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px; 
+    text-align: right;
+    color: var(--medium-brown);
+  }
+}

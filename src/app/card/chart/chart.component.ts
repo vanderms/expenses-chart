@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ExpensesService } from 'src/app/services/expenses.service';
-import { ExpenseModel, DailyExpenseModel } from 'src/app/models/expense.model';
+import { DailyExpenseModel } from 'src/app/models/expense.model';
 
 @Component({
   selector: 'card-chart',

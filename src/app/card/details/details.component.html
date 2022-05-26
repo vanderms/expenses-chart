@@ -1,1 +1,10 @@
-<p>details works!</p>
+<section class="card-details" aria-labelledby="card-details__title">
+  <div class="right">
+    <h2 class="title" id="card_details__title">Total this month</h2>
+    <p class="month-value">{{ totalMonth }}</p>
+  </div>
+  <div class="left">
+    <p class="last-month-percentage">{{ lastMonthPercentage > 0 ? "+" : "-"}}{{ lastMonthPercentage }}</p>
+    <p class="last-month-label">from last month</p>
+  </div>
+</section>
