@@ -1,27 +1,24 @@
-# ExpensesChart
+# Expenses Chart Component
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+This is a micro fullstack application that display data and a chart about a bank account or something related.
 
-## Development server
+The backend part was created using a Netlify servless function that serves a json static data.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The frontend uses Angular and SCSS.
 
-## Code scaffolding
+The design is by Frontend Mentor io.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Built with
 
-## Build
+- Angular
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Netlify Servless Functions
 
-## Running unit tests
+- SCSS
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Links
 
-## Running end-to-end tests
+Live: <https://peaceful-belekoy-d02be7.netlify.app/>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Solution on Frontend Mentor: <https://www.frontendmentor.io/solutions/angular-scss-netlify-servless-functions-EQELDceFE1>
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
